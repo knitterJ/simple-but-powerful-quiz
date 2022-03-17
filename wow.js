@@ -1,8 +1,10 @@
 var
-  start = document.getElementById('start');
+start = document.getElementById('start');
 content = document.getElementById('phrase');
 button = document.getElementById('wpProQuiz_button');
 blaa = document.getElementById('blaa');
+timeSpan = document.getElementById('time');
+progressBar = document.getElementById("timer-gauge-bar-inner"); 
 
 
 // button.onclick = function changePhrase(){
@@ -16,12 +18,42 @@ function renderQuestion(){
 
 // start.addEventListener("click",startQuiz());
 start.onclick = function () {
-  // blaa.display = "none";
+  let interval = 3599; 
+
+  blaa.display = "none";
   if (blaa.style.display !== "none") {
     blaa.style.display = "none";
   } else {
     blaa.style.display = "block";
   }
+
+  const getPercentage = (x) => (x / 60) * 100;
+  
+  //Where the countdown starts 
+  var countDown = setInterval(() => {
+    
+    var seconds = interval % 60 ; // Seconds that cannot be written in minutes
+    var secondsInMinutes = (interval - seconds) / 60; // Gives the seconds that COULD be given in minutes
+    var minutes = secondsInMinutes % 60; // Minutes that cannot be written in hours
+    var hours = "0" + (secondsInMinutes - minutes) / 60;
+    
+
+    interval -- ;
+    let progressWidth = interval / 3599 * 100; 
+
+    if(interval > 0) {
+        progressBar.style.width = progressWidth +  "%"; 
+        timeSpan.innerHTML = hours + ":" + minutes + ":" + seconds; 
+    } else {
+      clearInterval(countDown)
+      progressBar.style.width = "0%"; 
+      timeSpan.innerHTML = "Times Up : ( "
+    }
+  }, 1000);
+
+
+
+
 }
 
 // function getQuote() {
