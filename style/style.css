@@ -13,6 +13,10 @@ body {
   color: #5d5d5d;
 }
 
+ol li { 
+word-wrap: break-word;
+font-size: 14px;
+}
 /* p
 { padding: 0 0 15px 0;
   line-height: 1.5em;}
@@ -68,8 +72,7 @@ ul li
 ol
 { margin: 8px 0 22px 20px;}
 
-ol li
-{ margin: 0 0 11px 0;} */
+
 
 /* .left
 { float: left;
@@ -375,31 +378,30 @@ table tr td
 .review-question-box{
 border: 1px solid #C3D1A3;
 background-color: #F8FAF5;
-max-height: 75pt;
+max-height: 70pt;
 overflow: hidden;
 position: relative;
+margin-bottom: 0px;
+
 /* width:80%; */
 }
 
 .review-question-box ol {
   list-style-type: none !important;
-  margin: 0 !important;
-    margin-top: 0px;
-  padding: 5px 9pt 0 5px !important;
+  margin: 7px 7px 7px 7px;
+  /* padding: 5px 5px 5px 5px; */
   /* zoom: 1 !important; */
-  position: relative !important;
-  border: 0 !important;
-  /* width:80%; */
-  height:150px;
+  position: relative;
+  border: 0 ;
+  height: 80pt;
   overflow:scroll;
-  padding:5px"
 }
 
 .review-question-box li {
   float: left !important;
   margin: 0 5px 5px 0 !important;
   border: 1px solid #cfcfcf;
-  padding: 5px 0 !important;
+  padding: 5px 0;
   width: 30px !important;
   text-align: center !important;
   background-color: #fff;
@@ -408,15 +410,27 @@ position: relative;
   background-image: none !important;
 }
 
-::-webkit-scrollbar-track {
+/* .review-question-box::-webkit-scrollbar-track {
   margin-top: 2px;
   margin-bottom: 2px;
 }
 
-::-webkit-scrollbar-button {
+.review-question-box::-webkit-scrollbar-button {
   height: 0px; 
 }
-::-webkit-scrollbar-button {
+.review-question-box::-webkit-scrollbar-button {
   width: 50px; 
   height: 50px;
+}
+
+.review-question-box::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-right: none;
+  border-left: none;
+} */
+
+.review-question-box-target {
+font-weight: 700;
+border-color: #7DB1D3 !important;
+box-shadow: 0 0 2px 1px #C4C4C4;
 }
