@@ -3,6 +3,7 @@ start = document.getElementById('start');
 content = document.getElementById('phrase');
 button = document.getElementById('wpProQuiz_button');
 blaa = document.getElementById('blaa');
+timer = document.getElementById('timer'); 
 timeSpan = document.getElementById('time');
 progressBar = document.getElementById("timer-gauge-bar-inner"); 
 
@@ -16,16 +17,22 @@ function renderQuestion(){
   
 }
 
+blaa.display = "none";
+timer.style.display = "none"; 
+console.log(blaa.display);
+
 // start.addEventListener("click",startQuiz());
 start.onclick = function () {
   let interval = 3599; 
 
-  blaa.display = "none";
+
   if (blaa.style.display !== "none") {
     blaa.style.display = "none";
+    timer.style.display = "block"; 
   } else {
     blaa.style.display = "block";
   }
+  console.log(blaa.display); 
 
   const getPercentage = (x) => (x / 60) * 100;
   
@@ -41,7 +48,7 @@ start.onclick = function () {
     interval -- ;
     let progressWidth = interval / 3599 * 100; 
 
-    if(interval > 0) {
+    if(interval > 0 ) {
         progressBar.style.width = progressWidth +  "%"; 
         timeSpan.innerHTML = hours + ":" + minutes + ":" + seconds; 
     } else {
@@ -50,11 +57,9 @@ start.onclick = function () {
       timeSpan.innerHTML = "Times Up : ( "
     }
   }, 1000);
-
-
-
-
 }
+
+
 
 // function getQuote() {
 //     fetch("http://fakeapi.jsonparseronline.com/posts/1")

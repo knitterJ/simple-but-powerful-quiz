@@ -1,15 +1,17 @@
-html
-{ height: 100%;}
+html {
+  height: 100%;
+}
 
-*
-{ margin: 0;
-  padding: 0;}
+* {
+  margin: 0;
+  padding: 0;
+}
 
-body
-{ 
-  font: normal .9em 'trebuchet ms', arial, sans-serif;
+body {
+  font: normal 0.9em "trebuchet ms", arial, sans-serif;
   background: #646557 url(pattern.png) repeat fixed;
-  color: #5D5D5D;}
+  color: #5d5d5d;
+}
 
 /* p
 { padding: 0 0 15px 0;
@@ -97,7 +99,6 @@ ol li
 { width: 950px;
   height: 121px;} */
 
-
 /* #logo h1, #logo h2
 { font: normal 300% 'century gothic', arial, sans-serif;
   border-bottom: 0;
@@ -105,89 +106,92 @@ ol li
   margin: 0 0 0 0px;} */
 
 /* Simple Style */
-#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
-{ padding: 0px 0 0 0;
-  color: #A8AA94;
+#logo_text h1,
+#logo_text h1 a,
+#logo_text h1 a:hover {
+  padding: 0px 0 0 0;
+  color: #a8aa94;
   letter-spacing: 0.1em;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
-#logo_text h1 a .logo_colour
-{ color: #FFF;}
+#logo_text h1 a .logo_colour {
+  color: #fff;
+}
 
 /* Simple contemporary website template */
-#logo_text h2
-{ font-size: 120%;
+#logo_text h2 {
+  font-size: 120%;
   padding: 4px 0 0 0;
-  color: #A8AA94;}
+  color: #a8aa94;
+}
 
-  /* That's the main box that I'm interested about the most */
-  #main_site_content
-  { width: 1020px;
-    overflow: hidden;
-    margin: 44px auto 0 auto;
-    margin-bottom: 20px;
-  
-    background: rgb(255, 255, 255);
-    border-top: 0;
-    color: #5D5D5D;} 
+/* That's the main box that I'm interested about the most */
+#main_site_content {
+  width: 1020px;
+  overflow: hidden;
+  margin: 44px auto 0 auto;
+  margin-bottom: 20px;
+
+  background: rgb(255, 255, 255);
+  border-top: 0;
+  color: #5d5d5d;
+}
 
 /* Then we've got the menu bar  */
-#menubar
-{ 
+#menubar {
   /* margin: auto auto auto auto; */
   background-color: #333;
   /* overflow: hidden; */
   height: 44px;
   /* align-items: center; */
   width: 1020px;
-  
-} 
+}
 
 /*  Content box where the welcome text and start button will be placed */
 
-#menubar ul
-{ list-style: none;
+#menubar ul {
+  list-style: none;
   overflow: hidden;
   padding: 0;
-  
-  
-    /* padding: 12px 28px 5px 22px; */
 
+  /* padding: 12px 28px 5px 22px; */
 }
 
-#menubar li
-{ 
+#menubar li {
   display: inline-block;
-  border-right: 1px solid rgb(255, 255, 255); 
-  line-height: 44px; 
-  text-align: center; 
+  border-right: 1px solid rgb(255, 255, 255);
+  line-height: 44px;
+  text-align: center;
   justify-content: center;
 }
 
-#menubar li a
-{ font: normal 100% 'trebuchet ms', sans-serif;
+#menubar li a {
+  font: normal 100% "trebuchet ms", sans-serif;
   /* float: left;  */
   /* height: 0px; */
 
   /* Seems that only second and fourth value matters (the right and the left padding) */
   padding: 0px 28px 0px 22px;
   /* text-align: left */
-  color: #FFF;
-  text-align: center; 
-justify-content: center;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
   /* text-decoration: none; */
-  
-} 
+}
 
 /* ul#menu li.tab_selected a
 { height: 27px;
   padding: 6px 28px 5px 22px;} */
 
-#menubar li.selected a, ul#menu li.selected a:hover
-{ color: #ECEF01;}
+#menubar li.selected a,
+ul#menu li.selected a:hover {
+  color: #ecef01;
+}
 
-#menubar li a:hover
-{ color: #ECEF01;}
+#menubar li a:hover {
+  color: #ecef01;
+}
 
 /* #sidebar_container
 { float: right;
@@ -231,27 +235,28 @@ justify-content: center;
 { color: #444;
   text-decoration: none;}  */
 
-  #where_the_text_lands
-  {
-    margin: 25px 25px 25px 25px; 
-  }
-  
+#where_the_text_lands {
+  margin: 25px 25px 25px 25px;
+}
 
-#content
-{ text-align: left;
+#content {
+  text-align: left;
   width: 655px;
   padding: 15px 0 20px 0;
-  margin: 0;}
+  margin: 0;
+}
 
-#content ul
-{ margin: 2px 0 12px 0px;}
+#content ul {
+  margin: 2px 0 12px 0px;
+}
 
-#content ul li
-{ list-style-type: none;
+#content ul li {
+  list-style-type: none;
   background: url(bullet.png) no-repeat;
-  margin: 0 0 2px 0; 
+  margin: 0 0 2px 0;
   padding: 0 0 4px 25px;
-  line-height: 1.5em;}
+  line-height: 1.5em;
+}
 
 /* #footer
 { width: 950px;
@@ -345,15 +350,14 @@ table tr td
   color: #47433F;
   border-top: 1px solid #FFF;} */
 
-
-.modestly-my-name{
-font-family: Lora, Arial, Helvetica, sans-serif;
-font-size: 44px;
-line-height: 100%;
-text-align: center;
+.modestly-my-name {
+  font-family: Lora, Arial, Helvetica, sans-serif;
+  font-size: 44px;
+  line-height: 100%;
+  text-align: center;
 }
 
-.timer-gauge-bar{
+.timer-gauge-bar {
   width: 950px;
   height: 12px;
   margin-bottom: 15px;
@@ -361,9 +365,58 @@ text-align: center;
   position: relative;
 }
 
-.timer-gauge-bar-inner{
+.timer-gauge-bar-inner {
   background: #00f;
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.review-question-box{
+border: 1px solid #C3D1A3;
+background-color: #F8FAF5;
+max-height: 75pt;
+overflow: hidden;
+position: relative;
+/* width:80%; */
+}
+
+.review-question-box ol {
+  list-style-type: none !important;
+  margin: 0 !important;
+    margin-top: 0px;
+  padding: 5px 9pt 0 5px !important;
+  /* zoom: 1 !important; */
+  position: relative !important;
+  border: 0 !important;
+  /* width:80%; */
+  height:150px;
+  overflow:scroll;
+  padding:5px"
+}
+
+.review-question-box li {
+  float: left !important;
+  margin: 0 5px 5px 0 !important;
+  border: 1px solid #cfcfcf;
+  padding: 5px 0 !important;
+  width: 30px !important;
+  text-align: center !important;
+  background-color: #fff;
+  cursor: pointer !important;
+  list-style-type: none;
+  background-image: none !important;
+}
+
+::-webkit-scrollbar-track {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+::-webkit-scrollbar-button {
+  height: 0px; 
+}
+::-webkit-scrollbar-button {
+  width: 50px; 
+  height: 50px;
 }
