@@ -1,6 +1,6 @@
 Properly set up project, yields the following end result and increment correctly counted votes in the database.
 
-<img src="/repository/images/correct-result.png" alt="Thanks for voting results page" title="Thanks for voting results page">
+<img src="/dan-wellman-build-jQuery-php-based-poll-2009/images/correct-result.png" alt="Thanks for voting results page" title="Thanks for voting results page">
 
 In order to achieve it:
 -Place all the files from this folder in the new folder, in the special directory with Apache connectivity permissions (preferably with the shorter name). In Ubuntu it's /var/www/
