@@ -375,7 +375,7 @@ table tr td
   height: 100%;
 }
 
-.review-question-box{
+.review-question-box {
 border: 1px solid #C3D1A3;
 background-color: #F8FAF5;
 max-height: 70pt;
@@ -410,6 +410,10 @@ margin-bottom: 0px;
   background-image: none !important;
 }
 
+.review-question-box li.active {
+  background-color: red;
+}
+
 /* .review-question-box::-webkit-scrollbar-track {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -429,8 +433,14 @@ margin-bottom: 0px;
   border-left: none;
 } */
 
-.review-question-box-target {
-font-weight: 700;
-border-color: #7DB1D3 !important;
-box-shadow: 0 0 2px 1px #C4C4C4;
+  .menu li{
+    background-color:  #F2F2F2;   
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+.menu li.active {
+color: red;
 }

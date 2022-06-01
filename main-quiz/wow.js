@@ -59,8 +59,27 @@ start.onclick = function () {
   }, 1000);
 }
 
+$('.review-question-box li').click(function(event){
+  
+  // In the next stage there will be the code for exchanging current question. Similar to: https://jqueryui.com/tabs/#ajax
+
+  //Decipher on the next session what does event.preventDefault(); mean
+  event.preventDefault();
+
+  //Functionality that highlights the active tile. Based on http://jsfiddle.net/1ruy1t2h/3/
+  
+  //1.2. With the next click on the tile, remove "active" class from "review-question-box li" elements
+  $('.review-question-box li').removeClass('active');
+
+  //1.1. Clicking the tile adds the class "active" (meaning the tile becomes red)
+  $(this).addClass('active');
+
+  //Interestingly, the code doesn't work if removeClass and activeClass lines are exchanged, i.e. placed in different order 
+});
 
 
+//Will be useful when implementing next button: https://stackoverflow.com/questions/41188276/jquery-onclick-button-next-in-form
+// https://www.youtube.com/watch?v=49pYIMygIcU
 // function getQuote() {
 //     fetch("http://fakeapi.jsonparseronline.com/posts/1")
 //       .then(response => response.json())
